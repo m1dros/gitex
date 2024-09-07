@@ -1,4 +1,6 @@
 name: Action for 3 jobs
+env:
+  COMMITNAME : Commit-name-${{ github.sha }}
 on:
   push:
     branches: [ "main" ]
@@ -8,9 +10,8 @@ jobs:
 
     steps:
     - name: Print Hello
-      run: echo "Hello!"
-    - name: Print version ubuntu
-      run: lsb_release -a
-    - name: Print sha- of commit
-      run: git clone https://github.com/m1dros/gitex.git && git log --oneline
+      run: |
+        echo "Hello!"
+        lsb_release -a
+        echo "Its is ${{ env.COMMITNAME }}"
   
