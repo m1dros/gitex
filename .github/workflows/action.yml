@@ -23,4 +23,4 @@ jobs:
       uses: actions/checkout@v1
 
     - name: Exec test.sh
-      run: exec test.sh
+      run: exec ./test.sh
