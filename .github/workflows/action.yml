@@ -14,4 +14,10 @@ jobs:
         echo "Hello!"
         lsb_release -a
         echo "Its is ${{ env.COMMITNAME }}"
-  
+
+  job2:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Clone my repo
+      uses: actions/checkout@v1
