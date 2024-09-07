@@ -12,5 +12,5 @@ jobs:
     - name: Print version ubuntu
       run: lsb_release -a
     - name: Print sha- of commit
-      run: git log --oneline
+      run: git clone https://github.com/m1dros/gitex.git && git log --oneline
   
