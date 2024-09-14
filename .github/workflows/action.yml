@@ -44,6 +44,7 @@ jobs:
         echo "Last name: $LAST_NAME"
         
     - name: Phone number
-      run: echo "Phone Number: ${{ secrets.PHONE_NUMBER }}"
+      run: |
+        echo "Phone Number: ${{ secrets.PHONE_NUMBER }}"
     
     
