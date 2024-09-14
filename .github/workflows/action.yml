@@ -31,14 +31,12 @@ jobs:
     runs-on: ubuntu-latest
       
     steps:
-    - name: Set First name
-      run: echo "FIRST_NAME=Iliya" >> $GITHUB_ENV
+    - name: First name
+      run: | 
+        echo "FIRST_NAME=Iliya" >> $GITHUB_ENV
+        echo "First Name: ${{ env.FIRST_NAME }}"
       
-    - name: Printing First name
-      run: |
-       echo "First Name: ${{ env.FIRST_NAME }}"
-
-    - name: Set and Printing Last name
+    - name: Last name
       run: |
         LAST_NAME=Spirin
         echo "Last name: $LAST_NAME"
