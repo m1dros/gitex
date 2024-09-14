@@ -32,7 +32,7 @@ jobs:
       
     steps:
     - name: Set First name
-      run: echo "FIRST_NAME=Iliya" >> GITHUB_ENV
+      run: echo "FIRST_NAME=Iliya" >> $GITHUB_ENV
       
     - name: Printing First name
       run: |
