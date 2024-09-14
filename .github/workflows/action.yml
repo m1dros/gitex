@@ -43,7 +43,7 @@ jobs:
         LAST_NAME=Spirin
         echo "Last name: $LAST_NAME"
         
-#   - name: Phone number
-#     run: echo "Phone Number: ${{ secrets.PHONE_NUMBER }}"
+    - name: Phone number
+      run: echo "Phone Number: ${{ secrets.PHONE_NUMBER }}"
     
     
