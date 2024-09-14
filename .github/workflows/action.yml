@@ -33,7 +33,7 @@ jobs:
     steps:
     - name: First name
       run: |
-       echo "FIRST_NAME=Iliya" >> GITHUB_ENV"
+       echo "FIRST_NAME=Iliya" >> GITHUB_ENV
        LAST_NAME=Spirin
        echo "First Name: ${{ env.FIRST_NAME }}"
        echo "Last Name: $LAST_NAME"
