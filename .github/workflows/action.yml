@@ -45,6 +45,8 @@ jobs:
         
     - name: Phone number
       run: |
-        echo "Phone Number: ${{ secrets.PHONE_NUMBER }}"
-    
-    
+        if [ -n "${{ secrets.PHONE_NUMBER }}" ]; then
+          echo "Phone Number: ${{ secrets.PHONE_NUMBER }}"
+        else
+          echo "Phone Number is not set"
+        fi
